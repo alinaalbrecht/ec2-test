@@ -32,10 +32,10 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-#      - name: Build and push
-#        uses: docker/build-push-action@v6.9.0
-#        with:
-#          push: true
-#          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
+      - name: Build and push
+        uses: docker/build-push-action@v6.9.0
+        with:
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:latest
 
 
