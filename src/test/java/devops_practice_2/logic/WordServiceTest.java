@@ -16,6 +16,6 @@ public class WordServiceTest {
     @Test
     public void shouldReverseWord() {
         var result = wordService.reverse("hello");
-        assert(result).equals("olle");
+        assert(result).equals("olleh");
     }
 }
