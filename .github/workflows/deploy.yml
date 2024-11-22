@@ -55,7 +55,7 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}
             docker stop ${{ secrets.CONTAINER_NAME }}
             docker rm ${{ secrets.CONTAINER_NAME }}
-            docker run --detach --name ${{ secrets.CONTAINER_NAME }} -p 80:8080
+            docker run --detach --name ${{ secrets.CONTAINER_NAME }} -p 80:8080 ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.DOCKERHUB_REPOSITORY }}
 
 
 
